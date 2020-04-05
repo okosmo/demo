@@ -1,0 +1,4 @@
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+PassengerNodeJs /home/htps/.nvm/versions/node/v13.12.0/bin/node
